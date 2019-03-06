@@ -1,9 +1,5 @@
                                                                                                                                             0
 
-# digiBooks
-
-I will be making a digital balance book. The course won't go far as to cache the files, but I'm going to attempt it anyway.
-
 This is good for anyone that needs a balance.
 
 # Things to work on
