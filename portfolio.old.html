@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- this is a dirty way of doing it, but it sure beats downloading bootstrap source and using SASS for a quick and simple project -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/clock.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <title>Ashell's Portfolio ::Gallery</title>
+    <script>
+      console.log(
+        `%c
+            
+ d*##$.                d*##$.                    
+zP"   "$e.           $"    $o
+4$       '$          $"      $
+'$        '$        J$       $F
+ 'b        $k       $>       $
+  $k        $r     J$       d$
+  '$         $     $"       $~
+   '$        "$   '$E       $
+    $         $L   $"      $F ...
+     $.       4B   $      $$$*"""*b
+     '$        $.  $$     $$      $F
+      "$       R$  $F     $"      $
+       $k      ?$ u*     dF      .$
+       ^$.      $$"     z$      u$$$$e
+        #$b             $E.dW@e$"    ?$
+         #$           .o$$# d$$$$c    ?F
+          $      .d$$#" . zo$>   #$r .uF
+          $L .u$*"      $&$$$k   .$$d$$F
+           $$"            ""^"$$$P"$P9$
+          JP              .o$$$$u:$P $$
+          $          ..ue$"      ""  $"
+         d$          $F              $
+         $$     ....udE             4B
+          #$    """"' $r            @$
+           ^$L        '$            $F
+             RN        4N           $
+              *$b                  d$
+               $$k                 $F
+               $$b                $F
+                 $""               $F
+                 '$                $
+                  $L               $
+                  '$               $
+                   $               $
+            `,
+        "font-family:monospace"
+      );
+    </script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <!-- push-right adds margin to the LEFT. Ex: {border}push-right->->CONTENT -->
+      <div class="bg-info" id="brand-name">
+        <div class="push-right">
+          <h1 class="nav navbar-brand text-dark">Ashell Fernando</h1>
+        </div>
+      </div>
+      <div id="time" style="margin-left:10px"></div>
+      <div id="date" style="margin-left:10px"></div>
+      <!-- <a> is child of <li>, which is child of <ul>, so we push the whole <ul> by ml-auto, which is auto-margin in FLEX  -->
+      <ul class="nav navbar-nav ml-auto ">
+        <li class="nav-item">
+          <a class="nav-link active text-muted" href="./index.html">About</a>
+        </li>
+
+        <li class="nav-item border-right border-left">
+          <a class="nav-link text-muted " href="./portfolio.html">
+            Portfolio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-muted " href="./contact.html"> Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- What push-down does is, it creates margin on bottom of the empty div -->
+    <div class="push-down"></div>
+    <div class="container border">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="my-3 text-info">Portfolio</h1>
+          <hr />
+        </div>
+      </div>
+      <div class="row my-3 mx-3">
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="./assets/img/GWG.PNG"
+            alt=""
+            class="img-fluid img-portfolio"
+          />
+          <h4 class="overlay-text text-white">Test</h4>
+        </div>
+      </div>
+    </div>
+    <!-- if you add "fixed-bottom", bootstrap will sticky whatever element to the bottom. Look at <nav> to see "fixed-top" -->
+    <div class="push-down"></div>
+    <footer class="footer bg-info fixed-bottom">
+      <div class="pt-1 bg-dark"></div>
+      <div class="container">
+        <div class="row justify-content-center pt-2 pb-2">
+          <div class="col-md-auto ml-center">
+            Ashell Fernando &copy; 2019
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
