@@ -1,45 +1,50 @@
 #portrait-id {
-  height: 200px;
-  overflow: hidden;
-  padding: 0 1rem 1rem 0;
-  padding: 0 1rem 1rem 0;
-  border-radius: 20px;
+    height: 200px;
+    overflow: hidden;
+    padding: 0 1rem 1rem 0;
+    padding: 0 1rem 1rem 0;
+    border-radius: 20px;
 }
 
 #GWG-image,
 #WbW1-img {
-  height: 400px;
-  border-radius: 20px;
+    height: 400px;
+    border-radius: 20px;
 }
 
 .img-portfolio {
-  /* height: 250px !important; */
-  position: relative;
-  float: left;
-  width: 274px;
-  margin: 20px 0 25px;
-  overflow: auto;
+    /* height: 250px !important; */
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
 }
 
 .jumbotron {
-  width: 100%;
+    width: 100%;
 }
 
 .gallery-image {
-  margin: 1% auto;
-  border-radius: 10px;
-  height: 300px;
-  width: 100%;
+    margin: 1% auto;
+    border-radius: 10px;
+    height: 300px;
+    width: 100%;
 }
 
 .github {
-  height: 20px;
+    height: 20px;
 }
 
 .card-link {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #notDone {
-  display: none;
+    display: none;
+}
+
+.gallery-video {
+    height: 300px;
+    border-radius: 5px;
 }
