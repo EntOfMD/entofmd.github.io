@@ -1,434 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=, shrink-to-fit=no"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./assets/img/favicon.png"
-    />
-    <title>Ashell's Portfolio :: Gallery</title>
-  </head>
-  <body>
-    <!-- Navbar starts here. First few is for mobile view -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand text-warning" id="nav_name" href="index.html"
-        >Ashell Fernando</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarColor02"
-        aria-controls="navbarColor02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse " id="navbarColor02">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link text-danger" href="portfolio.html"
-              >Portfolio <span class="sr-only">(current)</span></a
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="shortcut icon"
+            type="image/png"
+            href="./assets/img/favicon.png"
+        />
+        <title>Ashell's Portfolio :: Gallery</title>
+    </head>
+    <body>
+        <!-- Navbar starts here. First few is for mobile view -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand text-warning" id="nav_name" href="index.html"
+                >Ashell Fernando</a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Navbar ends -->
-    <div class="container">
-      <div class="row">
-        <div class="jumbotron mt-5">
-          <div class="col-sm-auto col-md-auto col-lg-auto col-xl-auto">
-            <h2 class="text-primary">Portfolio Gallery</h2>
-          </div>
-          <hr class="my-4" />
-          <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    id="1"
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project1.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-primary mb-3">
-                    <div class="card-header text-center">
-                      Project #1 - Personal
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/digiBooks">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="http://entofmd.github.io/digiBooks"
-                          class="card-link text-dark"
-                        >
-                          digiBooks</a
-                        >
-                      </h4>
-                      <p class="card-text">
-                        My first big JavaScript work that calculates user input
-                        values (income and expenses), and give a visual summery
-                        of their balance. This project taught me almost
-                        everything I know about JS.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    id="2"
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project2.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-danger mb-3">
-                    <div class="card-header text-center">
-                      Project #2 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/unit-4-game">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://entofmd.github.io/unit-4-game/"
-                          class="card-link text-dark"
-                        >
-                          Crystal Collector</a
-                        >
-                      </h4>
-                      <p class="card-text">
-                        A game where user has to match the randomly generated
-                        Goal score, by clicking one or all of the crystals;
-                        which are also randomly generated each round. Using
-                        jQuery, learned how to manipulate the DOM.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    id="3"
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project3.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-success mb-3">
-                    <div class="card-header text-center">
-                      Project #3 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/Psychic-Game">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://entofmd.github.io/Psychic-Game/"
-                          class="card-link text-dark"
-                        >
-                          Psychic-Game</a
-                        >
-                      </h4>
-                      <p class="card-text">
-                        A fun game where the user has to match randomly
-                        generated key. Uses jQuery to capture user's keystroke
-                        and matches it against the randomly generated.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    id="4"
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project4.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-light mb-3">
-                    <div class="card-header text-center text-dark">
-                      Project #4 - Personal
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/spacex_launches">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://spacex-launches-and-info.herokuapp.com"
-                          class="card-link text-dark"
-                        >
-                          SpaceX Launches and Rocket Info</a
-                        >
-                      </h4>
-                      <p class="card-text text-dark">
-                        Using GraphQL/Apollo, gathered SpaceX API data and
-                        displays using React. For now, it only displays past and
-                        future launches, and within Launch Detail, the Rocket
-                        data is also displayed.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    id="5"
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/Project5.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-warning mb-3">
-                    <div class="card-header text-center text-dark">
-                      Project #5 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/TriviaGame">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://entofmd.github.io/TriviaGame/"
-                          class="card-link text-dark"
-                        >
-                          Trivia Game!</a
-                        >
-                      </h4>
-                      <p class="card-text text-dark"></p>
-                      Using a trivia API to generate random questions and test
-                      user's knowledge. First app to use AJAX.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-12 col-lg-6" id="6">
-                  <img
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project6.PNG"
-                    alt=""
-                  />
-                  <div class="card text-dark bg-secondary mb-3">
-                    <div class="card-header text-center text-dark">
-                      Project #6 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/Gif-McGiphFace">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://entofmd.github.io/Gif-McGiphFace/index.html"
-                          class="card-link text-dark"
-                        >
-                          Gif McGiphFace</a
-                        >
-                      </h4>
-                      <p class="card-text text-dark">
-                        Using AJAX, this app is retrieving gifs from GIPHY api.
-                        Search a keyword on top, which adds it to a toolbar on
-                        the page. Click on the image to play the gif, or pause.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6" id="7">
-                  <iframe
-                    class="img-fluid gallery-video"
-                    src="https://drive.google.com/file/d/1S2-ys7dL-6y-_tIGnvGrfwFRyyJKsZge/preview"
-                    width="520"
-                    height="520"
-                    allowfullscreen
-                  ></iframe>
-                  <div class="card text-light bg-primary mb-3">
-                    <div class="card-header text-center text-light">
-                      Project #7 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a href="https://github.com/EntOfMD/bamazon">
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://github.com/EntOfMD/bamazon#bamazon"
-                          class="card-link text-dark"
-                        >
-                          Bamazon Market</a
-                        >
-                      </h4>
-                      <p class="card-text text-light">
-                        First project with Node.js, Bamazon Market is a CLI app
-                        to purchase items, as well as to manage products as a
-                        store manager. It connects to a database via MySQL and
-                        it makes sure the customer always get the product, on
-                        time :)
-                      </p>
-                    </div>
-                  </div>
-                </div>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarColor02"
+                aria-controls="navbarColor02"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div id="8" class="col-sm-6 col-md-12 col-lg-6">
-                  <img
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project8.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-danger mb-3">
-                    <div class="card-header text-center text-light">
-                      Project #8 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a
-                          href="https://github.com/EntOfMD/FriendFinder"
-                          target="_blank"
+            <div class="collapse navbar-collapse " id="navbarColor02">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-danger" href="portfolio.html"
+                            >Portfolio <span class="sr-only">(current)</span></a
                         >
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          target="_blank"
-                          href="https://friend-finder-tothemax.herokuapp.com/"
-                          class="card-link text-dark"
-                        >
-                          Friend Finder</a
-                        >
-                      </h4>
-                      <p class="card-text text-light">
-                        An app to find the compatibility to find friends or
-                        perhaps to find your significant other ;)
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-12 col-lg-6" id="9">
-                  <img
-                    class="img-fluid gallery-image"
-                    src="./assets/img/portfolio/project9.PNG"
-                    alt=""
-                  />
-                  <div class="card text-white bg-success mb-3">
-                    <div class="card-header text-center text-dark">
-                      Project #9 - GW Coding Bootcamp
-                    </div>
-                    <div class="card-body">
-                      <h4 class="card-title">
-                        <a
-                          target="_blank"
-                          href="https://github.com/EntOfMD/Eat-Da-Burger"
-                        >
-                          <img
-                            src="./assets/img/github.png"
-                            alt="github logo"
-                            class="github"
-                          />
-                        </a>
-                        <a
-                          href="https://eat-da-burgers-app.herokuapp.com/app"
-                          class="card-link text-dark"
-                        >
-                          Eat-Da-Burger!</a
-                        >
-                      </h4>
-                      <p class="card-text text-light">
-                        Made with Node.js, Express Web Server, Handlebars view
-                        engine, Bootstrap for Web Framework, MySQL along with
-                        ORMs and a touch of jQuery. Add your burger and and
-                        CRUSH IT!
-                        <br />
-                        <span class="small-text">Bon Appétit</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- PLACE TEMPLATE FROM HERE -->
-              </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
+        </nav>
+        <!-- Navbar ends -->
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron mt-5">
+                    <div
+                        class="col-sm-auto col-md-auto col-lg-auto col-xl-auto"
+                    >
+                        <h2 class="text-primary">Portfolio Gallery</h2>
+                    </div>
+                    <hr class="my-4" />
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        id="1"
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project1.PNG"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="card text-white bg-primary mb-3"
+                                    >
+                                        <div class="card-header text-center">
+                                            Project #1 - Personal
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/digiBooks"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="http://entofmd.github.io/digiBooks"
+                                                    class="card-link text-dark"
+                                                >
+                                                    digiBooks</a
+                                                >
+                                            </h4>
+                                            <p class="card-text">
+                                                My first big JavaScript work
+                                                that calculates user input
+                                                values (income and expenses),
+                                                and give a visual summery of
+                                                their balance. This project
+                                                taught me almost everything I
+                                                know about JS.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        id="2"
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project2.PNG"
+                                        alt=""
+                                    />
+                                    <div class="card text-white bg-danger mb-3">
+                                        <div class="card-header text-center">
+                                            Project #2 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/unit-4-game"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://entofmd.github.io/unit-4-game/"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Crystal Collector</a
+                                                >
+                                            </h4>
+                                            <p class="card-text">
+                                                A game where user has to match
+                                                the randomly generated Goal
+                                                score, by clicking one or all of
+                                                the crystals; which are also
+                                                randomly generated each round.
+                                                Using jQuery, learned how to
+                                                manipulate the DOM.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        id="3"
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project3.PNG"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="card text-white bg-success mb-3"
+                                    >
+                                        <div class="card-header text-center">
+                                            Project #3 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/Psychic-Game"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://entofmd.github.io/Psychic-Game/"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Psychic-Game</a
+                                                >
+                                            </h4>
+                                            <p class="card-text">
+                                                A fun game where the user has to
+                                                match randomly generated key.
+                                                Uses jQuery to capture user's
+                                                keystroke and matches it against
+                                                the randomly generated.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        id="4"
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project4.PNG"
+                                        alt=""
+                                    />
+                                    <div class="card text-white bg-light mb-3">
+                                        <div
+                                            class="card-header text-center text-dark"
+                                        >
+                                            Project #4 - Personal
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/spacex_launches"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://spacex-launches-and-info.herokuapp.com"
+                                                    class="card-link text-dark"
+                                                >
+                                                    SpaceX Launches and Rocket
+                                                    Info</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-dark">
+                                                Using GraphQL/Apollo, gathered
+                                                SpaceX API data and displays
+                                                using React. For now, it only
+                                                displays past and future
+                                                launches, and within Launch
+                                                Detail, the Rocket data is also
+                                                displayed.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        id="5"
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/Project5.PNG"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="card text-white bg-warning mb-3"
+                                    >
+                                        <div
+                                            class="card-header text-center text-dark"
+                                        >
+                                            Project #5 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/TriviaGame"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://entofmd.github.io/TriviaGame/"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Trivia Game!</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-dark"></p>
+                                            Using a trivia API to generate
+                                            random questions and test user's
+                                            knowledge. First app to use AJAX.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-12 col-lg-6" id="6">
+                                    <img
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project6.PNG"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="card text-dark bg-secondary mb-3"
+                                    >
+                                        <div
+                                            class="card-header text-center text-dark"
+                                        >
+                                            Project #6 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/Gif-McGiphFace"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://entofmd.github.io/Gif-McGiphFace/index.html"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Gif McGiphFace</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-dark">
+                                                Using AJAX, this app is
+                                                retrieving gifs from GIPHY api.
+                                                Search a keyword on top, which
+                                                adds it to a toolbar on the
+                                                page. Click on the image to play
+                                                the gif, or pause.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-12 col-lg-6" id="7">
+                                    <iframe
+                                        class="img-fluid gallery-video"
+                                        src="https://drive.google.com/file/d/1S2-ys7dL-6y-_tIGnvGrfwFRyyJKsZge/preview"
+                                        width="520"
+                                        height="520"
+                                        allowfullscreen
+                                    ></iframe>
+                                    <div
+                                        class="card text-light bg-primary mb-3"
+                                    >
+                                        <div
+                                            class="card-header text-center text-light"
+                                        >
+                                            Project #7 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/bamazon"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://github.com/EntOfMD/bamazon#bamazon"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Bamazon Market</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-light">
+                                                First project with Node.js,
+                                                Bamazon Market is a CLI app to
+                                                purchase items, as well as to
+                                                manage products as a store
+                                                manager. It connects to a
+                                                database via MySQL and it makes
+                                                sure the customer always get the
+                                                product, on time :)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="8" class="col-sm-6 col-md-12 col-lg-6">
+                                    <img
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project8.PNG"
+                                        alt=""
+                                    />
+                                    <div class="card text-white bg-danger mb-3">
+                                        <div
+                                            class="card-header text-center text-light"
+                                        >
+                                            Project #8 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/FriendFinder"
+                                                    target="_blank"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    target="_blank"
+                                                    href="https://friend-finder-tothemax.herokuapp.com/"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Friend Finder</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-light">
+                                                An app to find the compatibility
+                                                to find friends or perhaps to
+                                                find your significant other ;)
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-md-12 col-lg-6" id="9">
+                                    <img
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project9.PNG"
+                                        alt=""
+                                    />
+                                    <div
+                                        class="card text-white bg-success mb-3"
+                                    >
+                                        <div
+                                            class="card-header text-center text-dark"
+                                        >
+                                            Project #9 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    target="_blank"
+                                                    href="https://github.com/EntOfMD/Eat-Da-Burger"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://eat-da-burgers-app.herokuapp.com/app"
+                                                    class="card-link text-dark"
+                                                >
+                                                    Eat-Da-Burger!</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-light">
+                                                Made with Node.js, Express Web
+                                                Server, Handlebars view engine,
+                                                Bootstrap for Web Framework,
+                                                MySQL along with ORMs and a
+                                                touch of jQuery. Add your burger
+                                                and and CRUSH IT!
+                                                <br />
+                                                <span class="small-text"
+                                                    >Bon Appétit</span
+                                                >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-sm-6 col-md-12 col-lg-6"
+                                    id="10"
+                                >
+                                    <img
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project10a.PNG"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="img-fluid gallery-image"
+                                        src="./assets/img/portfolio/project10b.PNG"
+                                        alt=""
+                                    />
+
+                                    <div class="card text-white bg-light mb-3">
+                                        <div
+                                            class="card-header text-center text-dark"
+                                        >
+                                            Project #10 - GW Coding Bootcamp
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">
+                                                <a
+                                                    href="https://github.com/EntOfMD/GreenEnergyFTW"
+                                                    target="_blank"
+                                                >
+                                                    <img
+                                                        src="./assets/img/github.png"
+                                                        alt="github logo"
+                                                        class="github"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href="https://greenenergyftw.herokuapp.com/"
+                                                    class="card-link text-dark"
+                                                >
+                                                    GreenEnergyFTW</a
+                                                >
+                                            </h4>
+                                            <p class="card-text text-dark">
+                                                Uses express to create a server
+                                                inside node.js environment,
+                                                written in JS. By utilizing MVC
+                                                (Model, View, Controller)
+                                                architecture, it's a versatile
+                                                app that separates it's
+                                                functionality so spaghetti code
+                                                won't happen. The app then
+                                                scrapes specified URL using
+                                                cheerio.js, saves the data into
+                                                mongoDB database, and finally
+                                                shows into the DOM via
+                                                express-handlebars, which is a
+                                                view engine.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- PLACE TEMPLATE FROM HERE -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <footer class="footer ">
-      <div class="bg-dark"></div>
-      <div class="container">
-        <div class="row justify-content-center pt-2 pb-2">
-          <div class="col-md-auto ml-center text-primary">
-            Ashell Fernando &copy; 2019
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+        <footer class="footer ">
+            <div class="bg-dark"></div>
+            <div class="container">
+                <div class="row justify-content-center pt-2 pb-2">
+                    <div class="col-md-auto ml-center text-primary">
+                        Ashell Fernando &copy; 2019
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
 
 <div class="col-sm-auto col-md-auto col-lg-auto col-xl-auto"></div>
